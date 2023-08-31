@@ -7,27 +7,27 @@ function App() {
     <>
     <h3>Click Counter</h3>
     <Counter inc="1">
-      {(count, incrementCount) => (
-        <ClickCounter count={count} incrementCount={incrementCount} />
+      {(count, incrementCount, inc) => (
+        <ClickCounter count={count} incrementCount={incrementCount} inc={inc} />
       )}
     </Counter>
     <br />
     <Counter inc="5">
-      {(count, incrementCount) => (
-        <ClickCounter count={count} incrementCount={incrementCount} />
+      {(count, incrementCount, inc) => (
+        <ClickCounter count={count} incrementCount={incrementCount}  inc={inc} />
       )}
     </Counter>
 
     <h3>Hover Counter</h3>
     <Counter inc="1">
-      {(count, incrementCount) => (
-        <HoverCounter count={count} incrementCount={incrementCount} />
+      {(count, incrementCount, inc) => (
+        <HoverCounter count={count} incrementCount={incrementCount} inc={inc} />
       )}
     </Counter>
     <br />
     <Counter inc="5">
-      {(count, incrementCount) => (
-        <HoverCounter count={count} incrementCount={incrementCount} />
+      {(count, incrementCount, inc) => (
+        <HoverCounter count={count} incrementCount={incrementCount}  inc={inc} />
       )}
     </Counter>
     </>
